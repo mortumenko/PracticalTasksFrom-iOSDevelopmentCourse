@@ -5,8 +5,8 @@ Descriptions of all tasks look at: http://vk.com/board58860049 (themes that begi
 
 List of themes:
 
-05 NSArray 
-07 Protocols
+05 NSArray \n
+07 Protocols \n
 08 NSDictionary 
 09 Delegates 
 10 Notifications 
