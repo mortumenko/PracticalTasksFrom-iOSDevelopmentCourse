@@ -1,0 +1,9 @@
+
+//STEP 1: creating a protocol and all included methods and properties
+//STEP 2: subscribe all connected classes on this protocol. next step --> *.m-file
+//STEP 3: releasation of all protocol's methods (properties are assigned in engine-class). With pragma mark
+//STEP 4: import everything, what you need (I don't know why we put this in *.m-file)
+//STEP 5: creating all class-objects with their properties
+//STEP 6: walking among array's items (class-objects) and saing that object must use the protocol. id - becouse item it's object, <TestProtocol> - don't sure, maybe becouse object must have required property *patient.name
+//STEP 7: cheking if object has optional method. Method respondsToSelector:@selector(method-name) , YES if object has this method
+//STEP 8: here we define proces's logic (procedure, algorytheme), decide what to do dependence from defferent conditions. But all methods must be done by object's class.

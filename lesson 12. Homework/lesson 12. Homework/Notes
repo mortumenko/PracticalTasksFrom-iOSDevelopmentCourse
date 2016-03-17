@@ -1,0 +1,19 @@
+
+//!!! for blocks like property we use ONLY copy-type
+
+
+//every property that included in block has STRONG connection
+//every block that is called like a property has STRONG connection too
+
+why sometimes we use method to execute block and don't use block directly? Because we can work with incoming parameters before put it in block. And every method (that uses this block) can work with parameters in with own unique algoritm.
+
+Why we use blocks?:
+block allows us to delay execution of some block if we send it with init-command.
+Also we don't need import all connected classes (AppDelegate), we can send block in any object. Also we can init object in deferent ways, via sending diferent blocks.
+!!! And VERY COOL: we can send some execution algoritm from one class to another only via block, and we can't do the same via method (we can't send method of AppDelegate-class to ASPatientClass !!!
+
+from discution, Alex's comments that approves my implementation:
+
+Единственное что, то для того, чтобы увидеть всю красоту и предназначение блоков,я бы лучше использовал тот твой код, где студентам становилось плохо случайным образом и как я помню через какое-то время. Тогда блок может сработать, а может и нет, может сработать сейчас, а может потом, но если он сработает, то код всегда будет отработан - хороший пример, для чего нужны блоки! В данном случае все вызывается линейно и в блоках особой нужды нет :( Но в любом случае, я думаю, что ты понимаешь саму суть, это видно из кода. Твой код становится компактнее и элегантнее - так держать!!! 5+ как обычно!
+
+почти все правильно, единственное что, так это получается что пациенты сами себе ставят диагноз теперь :) Вот этот блок им должен апп делегат передать как параметр, именно апп делегат должен назначить лечение, пациент должен вызвать этот блок через некоторое время после создания (это реализовано правильно) и передать в него указатель на себя. Можешь посмотреть как Саша Хоменко сделал, у него все правильно получилось, но решений на самом деле может быть много, так что можно и не копировать при желании :)'

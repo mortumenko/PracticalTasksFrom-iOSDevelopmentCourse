@@ -1,0 +1,20 @@
+
+    1-st: Easiest (lesson 30.Homework (main); )
+1. make all requaired methods for UITableViewDataSource-protocol in new class, who inherits "UITableViewController"
+2. drop in storyboard instance of "UITableViewController". Connect each ather (assign a class). Make it instance as "initial VS"
+
+2-nd: storyboard (lesson 30.Homework1; lesson 30 - UITableView Dynamic Cells)
+1. make all requaired methods for UITableViewDataSource-protocol in ViewController-class. Subscribe it on this protocol
+2. in storyboard allocate tableView on VC-instace. Set VC-class as datasource for this table. CLue this table as prorerty for VC-class.
+
+    3-rd: coding. Without storyboard
+1. Create new class (who inherits "UITableViewController")make all requaired methods for UITableViewDataSource-protocol.
+2. In AppDelegate.m create instance of this class, assign it as navigation controller, and set it NC as rootcontroller for self.window. Something like this:
+"ColourCellsTableVC * vc = [[ColourCellsTableVC alloc] init];
+UINavigationController * navContr = [[UINavigationController alloc] initWithRootViewController:vc];
+self.window.rootViewController = navContr;"
+
+    4-th: pure coding. Creating instance and TableView in code (lesson 31 - UITableView Editing pt.1)
+see omnited lesson.
+1.About table and data - see "SSViewController.m"
+2.About Instance and root VC for window - see "AppDelegate.m"

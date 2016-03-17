@@ -1,0 +1,45 @@
+without STEP 1
+
+!!! We don't need any subscribtions to protocolsDelegate, just import header (that includes static names of notifications)
+
+(steps 2-5 must be made in class, whoes property we want to observe). this string are static and public so they will be visible for another classes
+
+STEP 2: declaration of notifications names         [SS-Government.h]
+STEP 3: write text of notifications (created in step 2) [SS-Government.m]
+STEP 4: creating keys for dictionary for using postnotification method                  [SS-Government.h]
+STEP 5: write text for dictionary's keys for using postnotification method          [SS-Government.m]
+STEP 6: we want to send notification to all subscribers when some parametr is changed. Insert code into the setters    [SS-Government.m]
+
+and now about subscribers ():
+STEP 7: we assign observers (subscribers) (AppDelegate.m and SS-Doctor.m) on notification. Call method [nc addObserver...] for        AppDelegate.m, SS-Doctor.m. General marker - notificationName (not key). Also you must choose selector for reaction if newValue has come
+STEP 8: !!! VERY IMPORTANT !!! remove observer      [AppDelegate.m]
+STEP 9: implamentation of observer's method         [AppDelegate.m, SS-Doctor.m]
+STEP 10: make an event (changing)  and catch the result     [AppDelegate.m]
+
+I know another example about NOTIFICATIONS with only 3 steps whithout all dictionary's stuff. see at lesson 27. Only three steps becouse of realisation of notification's body inside UITextFiled-class - Yes, it is. See master-level
+
+BE SURE that object (instance) who is observer is not deallocated, when event occurs
+
+
+Application's (UIApplication.h) life-cycle (extracted from observing notifications):
+
+1.1 - didFinishLaunchingWithOptions - delegate method
+1.2 - UIApplicationDidFinishLaunchingNotification
+2.1 - applicationDidBecomeActive - delegate method
+2.2 - UIApplicationDidBecomeActiveNotification
+
+after pressing 'home'-button (cmd+shift+h):
+3.1 - applicationWillResignActive - delegate method
+3.2 - UIApplicationWillResignActiveNotification
+4.1 - applicationDidEnterBackground - delegate method
+4.2 - UIApplicationDidEnterBackgroundNotification
+
+after launching by tap in icon		
+5.1 - applicationWillEnterForeground - delegate method
+5.2 - UIApplicationWillEnterForegroundNotification
+6.1 - applicationDidBecomeActive - delegate method
+6.2 - UIApplicationDidBecomeActiveNotification
+
+Explanation about ability to catch notifications from UIApplication-class:
+Humans don't need to #import <UIKit/UIKit.h> and they are able to catch notifications from UIApplication.h because they #import "SS-Government.h" who @import UIKit;
+  But PseudoAppDelegate.h CAN'T do this without #import <UIKit/UIKit.h> or @import UIKit because it didn't #import "SS-Government.h"

@@ -1,0 +1,19 @@
+AS: делегат это не класс, а объект !!!
+
+STEPS for creating your own delegator-delegate pairs:
+
+Who is delegator? Make this choise and declare @protocol PatientDelegate in delegator above @interface (example: @protocol PatientDelegate;) also declare property id <protocolName> delegate for *.h-file of delegator
+
+Then declare (without implementation) inside *.h-file delegateProtocol and it's methods. Methods have to send itself (delegator-instance)
+
+Who is delegate? Make this choise and subscribe it on this protocol (after #import header of delegator or (better) declaring that prococol exist (@protocol NameDelegateProtocol;))
+
+Assign who is delegate for delegate-property of delegator (id <protocolName> delegate). Do it in chosen flow of excution
+
+In *.m-file of delegate make implementation of protocol's methods (of course with #pragma mark - NameDelegateProtocol)
+
+That's all! You can call protocols method in execution flow. But not directly. You have to call delegate-methods inside implementation another methods inside DELEGATOR (like in one row above). After that flow finds who is delegate (by property) and send him selector's (method's) name and delegator instance.
+
+
+STEPS for creating delegate based on existing classes from lybrary's:
+Inside ViewController.h see Succesfull test for using delegate from existing classes from lybrary's <UITextFieldDelegate>

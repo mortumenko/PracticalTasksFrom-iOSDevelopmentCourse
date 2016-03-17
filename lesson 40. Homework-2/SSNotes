@@ -1,0 +1,13 @@
+MARK #1. observer can't follow ivar-changing
+MARK #2. But we can help observer to know this if we use some methods
+MARK #3. valueForKeyPath-method allows to extract value not only from chosen (or self) class, but over class (when class A  - it's a property of class B, we can make next command [classB valueForKeyPath@"classAProp.name"]). For valueForKey it's more (less) complicated
+id objectA = [classB valueForKey@"classA"];
+[objectA valueForKey@"name"];
+
+
+I stopped to re-write code aproximatly from 56:15 till 01:04:00 (about Validation)
+
+how to hang observer. Three nessesary steps:
+1 - assign observer for any chosen key [student1 addobserver:forKeyPath:...]; for one or many keys
+2 - use observer: -(void) observeValueForKeyPath:ofObject:change:context:... One method for all observed keys
+3 - remove observer [self.studentProp removeObserver:self forKeyPath:@"nameProp"]; one removing for one key

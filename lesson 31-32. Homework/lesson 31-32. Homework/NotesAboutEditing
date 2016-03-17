@@ -1,0 +1,23 @@
+for moving and editing: (it's a strongly different isssues)
+
+CHAPTER I - rearranging (reorder / moving support)
+
+1 - assign     self.tableView.editing = YES;
+(in viewDidLoad or throught navContrButton or with some selector or wherever you want)
+
+2 - implement two methods (from dataSource delegate protocol) bellow:
+
+//SS: conditional permission. Is done just AFTER you press Edit-button (changed self.tableView.editing = YES), BEFORE you tried to drag. Is called  for EVERY row (one by one).
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+// Return NO if you do not want the item to be re-orderable.
+return YES;
+}
+
+//SS: Delegate. Called, after you tried to drag. Place for make some manipulations whis data, 'cause it's delegate's method. It's usefull, when you move item from one section to another and if you must change table or array who will own this item after moving. if you don't need to change data in you arrays and tables you can miss it.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+}
+
+
+CHAPTER II - editing
+see at TableViewController.m

@@ -1,0 +1,5 @@
+STEP1: make property from your curent-table (with dragging or coding+pointing to navigator)
+STEP2: assign your VC-class to UITableViewDataSource-protocole
+STEP3: write implementation for protocole's methods
+STEP4: assign your VC in storyboard like DATAsource for your table (open context menu of your table (in storyboard) and drag datasource-field to VC in vertical-storyboard-navigator)
+step 5: in storyboard. Assign by "Storyboard Entry Point" (narrow) that VC is initial VC
