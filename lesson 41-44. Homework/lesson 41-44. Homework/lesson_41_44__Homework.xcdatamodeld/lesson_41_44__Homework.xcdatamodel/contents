@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F1603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Courses" representedClassName="CoursesMO" syncable="YES">
+        <attribute name="faculty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameOfCourse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="studentOfCourse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Users" inverseName="courseEnroled" inverseEntity="Users" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="courseToTeach" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="UsersMO" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motherLand" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courseEnroled" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Courses" inverseName="studentOfCourse" inverseEntity="Courses" syncable="YES"/>
+        <relationship name="courseToTeach" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Courses" inverseName="teacher" inverseEntity="Courses" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Courses" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="Users" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>

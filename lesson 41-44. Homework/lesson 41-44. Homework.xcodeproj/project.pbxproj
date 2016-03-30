@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840040741CA2E3870087115B /* CoursesMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 840040731CA2E3870087115B /* CoursesMO.m */; };
+		840A9FA81CA00A7100DACA76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A9FA71CA00A7100DACA76 /* main.m */; };
+		840A9FAB1CA00A7100DACA76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A9FAA1CA00A7100DACA76 /* AppDelegate.m */; };
+		840A9FAE1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840A9FAC1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodeld */; };
+		840A9FB41CA00A7100DACA76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840A9FB21CA00A7100DACA76 /* Main.storyboard */; };
+		840A9FB61CA00A7100DACA76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840A9FB51CA00A7100DACA76 /* Images.xcassets */; };
+		840A9FB91CA00A7100DACA76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840A9FB71CA00A7100DACA76 /* LaunchScreen.xib */; };
+		840A9FC51CA00A7100DACA76 /* lesson_41_44__HomeworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A9FC41CA00A7100DACA76 /* lesson_41_44__HomeworkTests.m */; };
+		843F24D11CA2898800AD2358 /* CourseDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F24CE1CA2898800AD2358 /* CourseDetails.m */; };
+		843F24D21CA2898800AD2358 /* CoursesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F24D01CA2898800AD2358 /* CoursesTVC.m */; };
+		843F24D71CA28D2300AD2358 /* SSNotes in Resources */ = {isa = PBXBuildFile; fileRef = 843F24D61CA28D2300AD2358 /* SSNotes */; };
+		84588FF81CA449AC002FA2ED /* SetTeacherTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588FF71CA449AC002FA2ED /* SetTeacherTVC.m */; };
+		846D379E1CAA8BD100BAB49B /* TeachersTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D379D1CAA8BD100BAB49B /* TeachersTVC.m */; };
+		848346911CA0438600C9855C /* flag-canada.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346831CA0438600C9855C /* flag-canada.png */; };
+		848346921CA0438600C9855C /* flag-china.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346841CA0438600C9855C /* flag-china.png */; };
+		848346931CA0438600C9855C /* flag-czech-republic.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346851CA0438600C9855C /* flag-czech-republic.png */; };
+		848346941CA0438600C9855C /* flag-france.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346861CA0438600C9855C /* flag-france.png */; };
+		848346951CA0438600C9855C /* flag-georgia.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346871CA0438600C9855C /* flag-georgia.png */; };
+		848346961CA0438600C9855C /* flag-germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346881CA0438600C9855C /* flag-germany.png */; };
+		848346971CA0438600C9855C /* flag-italy.png in Resources */ = {isa = PBXBuildFile; fileRef = 848346891CA0438600C9855C /* flag-italy.png */; };
+		848346981CA0438600C9855C /* flag-japan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8483468A1CA0438600C9855C /* flag-japan.png */; };
+		848346991CA0438600C9855C /* flag-poland.png in Resources */ = {isa = PBXBuildFile; fileRef = 8483468B1CA0438600C9855C /* flag-poland.png */; };
+		8483469A1CA0438600C9855C /* flag-ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 8483468C1CA0438600C9855C /* flag-ukraine.png */; };
+		8483469B1CA0438600C9855C /* flag-united-kingdom.png in Resources */ = {isa = PBXBuildFile; fileRef = 8483468D1CA0438600C9855C /* flag-united-kingdom.png */; };
+		8483469C1CA0438600C9855C /* flag-usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8483468E1CA0438600C9855C /* flag-usa.png */; };
+		8483469D1CA0438600C9855C /* UserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 848346901CA0438600C9855C /* UserDetails.m */; };
+		848EB6911CA403D4000F1666 /* SetStudentsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 848EB6901CA403D4000F1666 /* SetStudentsTVC.m */; };
+		8497C4C91CAA70560036B3A2 /* ForWarningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497C4C81CAA70560036B3A2 /* ForWarningVC.m */; };
+		84A0501B1CAABDCD00A10808 /* group_forum.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A050181CAABDCD00A10808 /* group_forum.png */; };
+		84A1DF981CA02D2E00C0DAC6 /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 84A1DF971CA02D2E00C0DAC6 /* Tasks */; };
+		84A3429D1CA00CA40093C59B /* ManagerForCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A342991CA00CA40093C59B /* ManagerForCoreData.m */; };
+		84A3429E1CA00CA40093C59B /* ParentForCoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3429B1CA00CA40093C59B /* ParentForCoreDataTVC.m */; };
+		84A342A21CA022370093C59B /* UsersTCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A342A11CA022370093C59B /* UsersTCV.m */; };
+		84AD1EEC1CA2886C00AA23D4 /* UsersMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD1EEB1CA2886C00AA23D4 /* UsersMO.m */; };
+		84C7B7F31CA3DF5E005CDC73 /* draft in Resources */ = {isa = PBXBuildFile; fileRef = 84C7B7F21CA3DF5E005CDC73 /* draft */; };
+		84F24CBF1CAAC241004DFAB3 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F24CBE1CAAC241004DFAB3 /* TabBarVC.m */; };
+		84F24CC51CABC8D4004DFAB3 /* courses_training.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F24CC21CABC8D4004DFAB3 /* courses_training.png */; };
+		84F24CC91CABCF37004DFAB3 /* Teacher-female-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F24CC81CABCF37004DFAB3 /* Teacher-female-24.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840A9FBF1CA00A7100DACA76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840A9F9A1CA00A7100DACA76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840A9FA11CA00A7100DACA76;
+			remoteInfo = "lesson 41-44. Homework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840040721CA2E3870087115B /* CoursesMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoursesMO.h; path = ../CoursesMO.h; sourceTree = "<group>"; };
+		840040731CA2E3870087115B /* CoursesMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoursesMO.m; path = ../CoursesMO.m; sourceTree = "<group>"; };
+		840A9FA21CA00A7100DACA76 /* lesson 41-44. Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lesson 41-44. Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840A9FA61CA00A7100DACA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840A9FA71CA00A7100DACA76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		840A9FA91CA00A7100DACA76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		840A9FAA1CA00A7100DACA76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		840A9FAD1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lesson_41_44__Homework.xcdatamodel; sourceTree = "<group>"; };
+		840A9FB31CA00A7100DACA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840A9FB51CA00A7100DACA76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		840A9FB81CA00A7100DACA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		840A9FBE1CA00A7100DACA76 /* lesson 41-44. HomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lesson 41-44. HomeworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840A9FC31CA00A7100DACA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840A9FC41CA00A7100DACA76 /* lesson_41_44__HomeworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lesson_41_44__HomeworkTests.m; sourceTree = "<group>"; };
+		843F24CD1CA2898800AD2358 /* CourseDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetails.h; sourceTree = "<group>"; };
+		843F24CE1CA2898800AD2358 /* CourseDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetails.m; sourceTree = "<group>"; };
+		843F24CF1CA2898800AD2358 /* CoursesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTVC.h; sourceTree = "<group>"; };
+		843F24D01CA2898800AD2358 /* CoursesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTVC.m; sourceTree = "<group>"; };
+		843F24D61CA28D2300AD2358 /* SSNotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SSNotes; path = "../../lesson41-CoreDataPart1Basic/lesson41-CoreDataPart1Basic/SSNotes"; sourceTree = "<group>"; };
+		84588FF61CA449AC002FA2ED /* SetTeacherTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTeacherTVC.h; sourceTree = "<group>"; };
+		84588FF71CA449AC002FA2ED /* SetTeacherTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTeacherTVC.m; sourceTree = "<group>"; };
+		846D379C1CAA8BD100BAB49B /* TeachersTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersTVC.h; sourceTree = "<group>"; };
+		846D379D1CAA8BD100BAB49B /* TeachersTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersTVC.m; sourceTree = "<group>"; };
+		848346831CA0438600C9855C /* flag-canada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-canada.png"; sourceTree = "<group>"; };
+		848346841CA0438600C9855C /* flag-china.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-china.png"; sourceTree = "<group>"; };
+		848346851CA0438600C9855C /* flag-czech-republic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-czech-republic.png"; sourceTree = "<group>"; };
+		848346861CA0438600C9855C /* flag-france.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-france.png"; sourceTree = "<group>"; };
+		848346871CA0438600C9855C /* flag-georgia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-georgia.png"; sourceTree = "<group>"; };
+		848346881CA0438600C9855C /* flag-germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-germany.png"; sourceTree = "<group>"; };
+		848346891CA0438600C9855C /* flag-italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-italy.png"; sourceTree = "<group>"; };
+		8483468A1CA0438600C9855C /* flag-japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-japan.png"; sourceTree = "<group>"; };
+		8483468B1CA0438600C9855C /* flag-poland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-poland.png"; sourceTree = "<group>"; };
+		8483468C1CA0438600C9855C /* flag-ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-ukraine.png"; sourceTree = "<group>"; };
+		8483468D1CA0438600C9855C /* flag-united-kingdom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-united-kingdom.png"; sourceTree = "<group>"; };
+		8483468E1CA0438600C9855C /* flag-usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-usa.png"; sourceTree = "<group>"; };
+		8483468F1CA0438600C9855C /* UserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetails.h; sourceTree = "<group>"; };
+		848346901CA0438600C9855C /* UserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetails.m; sourceTree = "<group>"; };
+		848EB68F1CA403D4000F1666 /* SetStudentsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStudentsTVC.h; sourceTree = "<group>"; };
+		848EB6901CA403D4000F1666 /* SetStudentsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetStudentsTVC.m; sourceTree = "<group>"; };
+		8497C4C71CAA70560036B3A2 /* ForWarningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForWarningVC.h; sourceTree = "<group>"; };
+		8497C4C81CAA70560036B3A2 /* ForWarningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForWarningVC.m; sourceTree = "<group>"; };
+		84A050181CAABDCD00A10808 /* group_forum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_forum.png; sourceTree = "<group>"; };
+		84A1DF971CA02D2E00C0DAC6 /* Tasks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tasks; sourceTree = "<group>"; };
+		84A342981CA00CA40093C59B /* ManagerForCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerForCoreData.h; sourceTree = "<group>"; };
+		84A342991CA00CA40093C59B /* ManagerForCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerForCoreData.m; sourceTree = "<group>"; };
+		84A3429A1CA00CA40093C59B /* ParentForCoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentForCoreDataTVC.h; sourceTree = "<group>"; };
+		84A3429B1CA00CA40093C59B /* ParentForCoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentForCoreDataTVC.m; sourceTree = "<group>"; };
+		84A342A01CA022370093C59B /* UsersTCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTCV.h; sourceTree = "<group>"; };
+		84A342A11CA022370093C59B /* UsersTCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTCV.m; sourceTree = "<group>"; };
+		84AD1EEA1CA2886C00AA23D4 /* UsersMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersMO.h; sourceTree = "<group>"; };
+		84AD1EEB1CA2886C00AA23D4 /* UsersMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersMO.m; sourceTree = "<group>"; };
+		84C7B7F21CA3DF5E005CDC73 /* draft */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = draft; sourceTree = "<group>"; };
+		84F24CBD1CAAC241004DFAB3 /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		84F24CBE1CAAC241004DFAB3 /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		84F24CC21CABC8D4004DFAB3 /* courses_training.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = courses_training.png; sourceTree = "<group>"; };
+		84F24CC81CABCF37004DFAB3 /* Teacher-female-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Teacher-female-24.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840A9F9F1CA00A7100DACA76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840A9FBB1CA00A7100DACA76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840A9F991CA00A7100DACA76 = {
+			isa = PBXGroup;
+			children = (
+				840A9FA41CA00A7100DACA76 /* lesson 41-44. Homework */,
+				840A9FC11CA00A7100DACA76 /* lesson 41-44. HomeworkTests */,
+				840A9FA31CA00A7100DACA76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840A9FA31CA00A7100DACA76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840A9FA21CA00A7100DACA76 /* lesson 41-44. Homework.app */,
+				840A9FBE1CA00A7100DACA76 /* lesson 41-44. HomeworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840A9FA41CA00A7100DACA76 /* lesson 41-44. Homework */ = {
+			isa = PBXGroup;
+			children = (
+				84A1DF971CA02D2E00C0DAC6 /* Tasks */,
+				84C7B7F21CA3DF5E005CDC73 /* draft */,
+				843F24D61CA28D2300AD2358 /* SSNotes */,
+				840A9FA91CA00A7100DACA76 /* AppDelegate.h */,
+				840A9FAA1CA00A7100DACA76 /* AppDelegate.m */,
+				8497C4C71CAA70560036B3A2 /* ForWarningVC.h */,
+				8497C4C81CAA70560036B3A2 /* ForWarningVC.m */,
+				84A342981CA00CA40093C59B /* ManagerForCoreData.h */,
+				84A342991CA00CA40093C59B /* ManagerForCoreData.m */,
+				84F24CBD1CAAC241004DFAB3 /* TabBarVC.h */,
+				84F24CBE1CAAC241004DFAB3 /* TabBarVC.m */,
+				843F24D31CA289B000AD2358 /* Details */,
+				84A1DF9A1CA02EE600C0DAC6 /* TVCs */,
+				84A050161CAABDCD00A10808 /* University */,
+				848346821CA0438600C9855C /* country flags */,
+				84A1DF991CA02EC200C0DAC6 /* Managed Objects */,
+				840A9FB21CA00A7100DACA76 /* Main.storyboard */,
+				840A9FB51CA00A7100DACA76 /* Images.xcassets */,
+				840A9FB71CA00A7100DACA76 /* LaunchScreen.xib */,
+				840A9FAC1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodeld */,
+				840A9FA51CA00A7100DACA76 /* Supporting Files */,
+			);
+			path = "lesson 41-44. Homework";
+			sourceTree = "<group>";
+		};
+		840A9FA51CA00A7100DACA76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840A9FA61CA00A7100DACA76 /* Info.plist */,
+				840A9FA71CA00A7100DACA76 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		840A9FC11CA00A7100DACA76 /* lesson 41-44. HomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				840A9FC41CA00A7100DACA76 /* lesson_41_44__HomeworkTests.m */,
+				840A9FC21CA00A7100DACA76 /* Supporting Files */,
+			);
+			path = "lesson 41-44. HomeworkTests";
+			sourceTree = "<group>";
+		};
+		840A9FC21CA00A7100DACA76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840A9FC31CA00A7100DACA76 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		843F24D31CA289B000AD2358 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				8483468F1CA0438600C9855C /* UserDetails.h */,
+				848346901CA0438600C9855C /* UserDetails.m */,
+				843F24CD1CA2898800AD2358 /* CourseDetails.h */,
+				843F24CE1CA2898800AD2358 /* CourseDetails.m */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		848346821CA0438600C9855C /* country flags */ = {
+			isa = PBXGroup;
+			children = (
+				848346831CA0438600C9855C /* flag-canada.png */,
+				848346841CA0438600C9855C /* flag-china.png */,
+				848346851CA0438600C9855C /* flag-czech-republic.png */,
+				848346861CA0438600C9855C /* flag-france.png */,
+				848346871CA0438600C9855C /* flag-georgia.png */,
+				848346881CA0438600C9855C /* flag-germany.png */,
+				848346891CA0438600C9855C /* flag-italy.png */,
+				8483468A1CA0438600C9855C /* flag-japan.png */,
+				8483468B1CA0438600C9855C /* flag-poland.png */,
+				8483468C1CA0438600C9855C /* flag-ukraine.png */,
+				8483468D1CA0438600C9855C /* flag-united-kingdom.png */,
+				8483468E1CA0438600C9855C /* flag-usa.png */,
+			);
+			path = "country flags";
+			sourceTree = "<group>";
+		};
+		84A050161CAABDCD00A10808 /* University */ = {
+			isa = PBXGroup;
+			children = (
+				84A050181CAABDCD00A10808 /* group_forum.png */,
+				84F24CC81CABCF37004DFAB3 /* Teacher-female-24.png */,
+				84F24CC21CABC8D4004DFAB3 /* courses_training.png */,
+			);
+			path = University;
+			sourceTree = "<group>";
+		};
+		84A1DF991CA02EC200C0DAC6 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				84AD1EEA1CA2886C00AA23D4 /* UsersMO.h */,
+				84AD1EEB1CA2886C00AA23D4 /* UsersMO.m */,
+				840040721CA2E3870087115B /* CoursesMO.h */,
+				840040731CA2E3870087115B /* CoursesMO.m */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		84A1DF9A1CA02EE600C0DAC6 /* TVCs */ = {
+			isa = PBXGroup;
+			children = (
+				84F24CC01CABC421004DFAB3 /* General */,
+				84F24CC11CABC42C004DFAB3 /* Additional */,
+			);
+			name = TVCs;
+			sourceTree = "<group>";
+		};
+		84F24CC01CABC421004DFAB3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				84A3429A1CA00CA40093C59B /* ParentForCoreDataTVC.h */,
+				84A3429B1CA00CA40093C59B /* ParentForCoreDataTVC.m */,
+				84A342A01CA022370093C59B /* UsersTCV.h */,
+				84A342A11CA022370093C59B /* UsersTCV.m */,
+				843F24CF1CA2898800AD2358 /* CoursesTVC.h */,
+				843F24D01CA2898800AD2358 /* CoursesTVC.m */,
+				846D379C1CAA8BD100BAB49B /* TeachersTVC.h */,
+				846D379D1CAA8BD100BAB49B /* TeachersTVC.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		84F24CC11CABC42C004DFAB3 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				848EB68F1CA403D4000F1666 /* SetStudentsTVC.h */,
+				848EB6901CA403D4000F1666 /* SetStudentsTVC.m */,
+				84588FF61CA449AC002FA2ED /* SetTeacherTVC.h */,
+				84588FF71CA449AC002FA2ED /* SetTeacherTVC.m */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840A9FA11CA00A7100DACA76 /* lesson 41-44. Homework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840A9FC81CA00A7100DACA76 /* Build configuration list for PBXNativeTarget "lesson 41-44. Homework" */;
+			buildPhases = (
+				840A9F9E1CA00A7100DACA76 /* Sources */,
+				840A9F9F1CA00A7100DACA76 /* Frameworks */,
+				840A9FA01CA00A7100DACA76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lesson 41-44. Homework";
+			productName = "lesson 41-44. Homework";
+			productReference = 840A9FA21CA00A7100DACA76 /* lesson 41-44. Homework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840A9FBD1CA00A7100DACA76 /* lesson 41-44. HomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840A9FCB1CA00A7100DACA76 /* Build configuration list for PBXNativeTarget "lesson 41-44. HomeworkTests" */;
+			buildPhases = (
+				840A9FBA1CA00A7100DACA76 /* Sources */,
+				840A9FBB1CA00A7100DACA76 /* Frameworks */,
+				840A9FBC1CA00A7100DACA76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840A9FC01CA00A7100DACA76 /* PBXTargetDependency */,
+			);
+			name = "lesson 41-44. HomeworkTests";
+			productName = "lesson 41-44. HomeworkTests";
+			productReference = 840A9FBE1CA00A7100DACA76 /* lesson 41-44. HomeworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840A9F9A1CA00A7100DACA76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					840A9FA11CA00A7100DACA76 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					840A9FBD1CA00A7100DACA76 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 840A9FA11CA00A7100DACA76;
+					};
+				};
+			};
+			buildConfigurationList = 840A9F9D1CA00A7100DACA76 /* Build configuration list for PBXProject "lesson 41-44. Homework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840A9F991CA00A7100DACA76;
+			productRefGroup = 840A9FA31CA00A7100DACA76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840A9FA11CA00A7100DACA76 /* lesson 41-44. Homework */,
+				840A9FBD1CA00A7100DACA76 /* lesson 41-44. HomeworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840A9FA01CA00A7100DACA76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8483469B1CA0438600C9855C /* flag-united-kingdom.png in Resources */,
+				843F24D71CA28D2300AD2358 /* SSNotes in Resources */,
+				840A9FB41CA00A7100DACA76 /* Main.storyboard in Resources */,
+				848346931CA0438600C9855C /* flag-czech-republic.png in Resources */,
+				840A9FB91CA00A7100DACA76 /* LaunchScreen.xib in Resources */,
+				84F24CC91CABCF37004DFAB3 /* Teacher-female-24.png in Resources */,
+				8483469A1CA0438600C9855C /* flag-ukraine.png in Resources */,
+				84F24CC51CABC8D4004DFAB3 /* courses_training.png in Resources */,
+				84C7B7F31CA3DF5E005CDC73 /* draft in Resources */,
+				84A0501B1CAABDCD00A10808 /* group_forum.png in Resources */,
+				848346941CA0438600C9855C /* flag-france.png in Resources */,
+				84A1DF981CA02D2E00C0DAC6 /* Tasks in Resources */,
+				848346981CA0438600C9855C /* flag-japan.png in Resources */,
+				848346911CA0438600C9855C /* flag-canada.png in Resources */,
+				848346951CA0438600C9855C /* flag-georgia.png in Resources */,
+				848346921CA0438600C9855C /* flag-china.png in Resources */,
+				848346961CA0438600C9855C /* flag-germany.png in Resources */,
+				848346991CA0438600C9855C /* flag-poland.png in Resources */,
+				8483469C1CA0438600C9855C /* flag-usa.png in Resources */,
+				840A9FB61CA00A7100DACA76 /* Images.xcassets in Resources */,
+				848346971CA0438600C9855C /* flag-italy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840A9FBC1CA00A7100DACA76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840A9F9E1CA00A7100DACA76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F24D21CA2898800AD2358 /* CoursesTVC.m in Sources */,
+				840A9FAB1CA00A7100DACA76 /* AppDelegate.m in Sources */,
+				840040741CA2E3870087115B /* CoursesMO.m in Sources */,
+				84A342A21CA022370093C59B /* UsersTCV.m in Sources */,
+				846D379E1CAA8BD100BAB49B /* TeachersTVC.m in Sources */,
+				84AD1EEC1CA2886C00AA23D4 /* UsersMO.m in Sources */,
+				843F24D11CA2898800AD2358 /* CourseDetails.m in Sources */,
+				8497C4C91CAA70560036B3A2 /* ForWarningVC.m in Sources */,
+				840A9FAE1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodeld in Sources */,
+				8483469D1CA0438600C9855C /* UserDetails.m in Sources */,
+				84F24CBF1CAAC241004DFAB3 /* TabBarVC.m in Sources */,
+				84A3429E1CA00CA40093C59B /* ParentForCoreDataTVC.m in Sources */,
+				848EB6911CA403D4000F1666 /* SetStudentsTVC.m in Sources */,
+				840A9FA81CA00A7100DACA76 /* main.m in Sources */,
+				84588FF81CA449AC002FA2ED /* SetTeacherTVC.m in Sources */,
+				84A3429D1CA00CA40093C59B /* ManagerForCoreData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840A9FBA1CA00A7100DACA76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840A9FC51CA00A7100DACA76 /* lesson_41_44__HomeworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840A9FC01CA00A7100DACA76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840A9FA11CA00A7100DACA76 /* lesson 41-44. Homework */;
+			targetProxy = 840A9FBF1CA00A7100DACA76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840A9FB21CA00A7100DACA76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840A9FB31CA00A7100DACA76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840A9FB71CA00A7100DACA76 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840A9FB81CA00A7100DACA76 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840A9FC61CA00A7100DACA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840A9FC71CA00A7100DACA76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840A9FC91CA00A7100DACA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "lesson 41-44. Homework/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		840A9FCA1CA00A7100DACA76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "lesson 41-44. Homework/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		840A9FCC1CA00A7100DACA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "lesson 41-44. HomeworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lesson 41-44. Homework.app/lesson 41-44. Homework";
+			};
+			name = Debug;
+		};
+		840A9FCD1CA00A7100DACA76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "lesson 41-44. HomeworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lesson 41-44. Homework.app/lesson 41-44. Homework";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840A9F9D1CA00A7100DACA76 /* Build configuration list for PBXProject "lesson 41-44. Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840A9FC61CA00A7100DACA76 /* Debug */,
+				840A9FC71CA00A7100DACA76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840A9FC81CA00A7100DACA76 /* Build configuration list for PBXNativeTarget "lesson 41-44. Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840A9FC91CA00A7100DACA76 /* Debug */,
+				840A9FCA1CA00A7100DACA76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840A9FCB1CA00A7100DACA76 /* Build configuration list for PBXNativeTarget "lesson 41-44. HomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840A9FCC1CA00A7100DACA76 /* Debug */,
+				840A9FCD1CA00A7100DACA76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		840A9FAC1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				840A9FAD1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodel */,
+			);
+			currentVersion = 840A9FAD1CA00A7100DACA76 /* lesson_41_44__Homework.xcdatamodel */;
+			path = lesson_41_44__Homework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 840A9F9A1CA00A7100DACA76 /* Project object */;
+}

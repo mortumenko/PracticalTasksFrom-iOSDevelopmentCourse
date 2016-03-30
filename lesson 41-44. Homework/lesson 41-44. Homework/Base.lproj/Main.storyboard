@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zgr-Ut-oKB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Users list-->
+        <scene sceneID="LDx-h9-2nq">
+            <objects>
+                <tableViewController title="Users list" id="czp-O4-txB" customClass="UsersTCV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="8tP-4m-ZaR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="00a-Wl-or4">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="00a-Wl-or4" id="zFB-EX-YW1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="czp-O4-txB" id="jJw-qx-eHQ"/>
+                            <outlet property="delegate" destination="czp-O4-txB" id="4bk-uK-zRm"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Users" image="group_forum.png" badgeValue="7" id="8Xd-xV-gbR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIq-zQ-G4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3343" y="1057"/>
+        </scene>
+        <!--Teachers list-->
+        <scene sceneID="eKT-Kr-ETH">
+            <objects>
+                <tableViewController title="Teachers list" id="Kjz-bb-PuY" customClass="TeachersTVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="yEK-NE-fxy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UTO-gP-jhr">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UTO-gP-jhr" id="T9O-6L-rQR">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kjz-bb-PuY" id="Z0c-DK-ZuU"/>
+                            <outlet property="delegate" destination="Kjz-bb-PuY" id="eP6-a1-jaI"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Teachers" image="Teacher-female-24.png" badgeValue="9" id="FBv-RT-mMI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8l-Ll-H3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2010" y="1057"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hrB-8Z-Z4x">
+            <objects>
+                <navigationController id="zgr-Ut-oKB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJT-fb-8R4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9rw-9J-uhB" kind="relationship" relationship="rootViewController" id="SRH-Px-Oeu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyd-W2-S9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3497" y="199"/>
+        </scene>
+        <!--Tables content-->
+        <scene sceneID="1Jo-3h-DEI">
+            <objects>
+                <tabBarController id="9rw-9J-uhB" customClass="TabBarVC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Tables content" id="dL1-qa-JRD"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Y3I-Af-YmG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="czp-O4-txB" kind="relationship" relationship="viewControllers" id="gYn-AG-qeb"/>
+                        <segue destination="BL5-Ph-uvm" kind="relationship" relationship="viewControllers" id="tev-fb-apT"/>
+                        <segue destination="Kjz-bb-PuY" kind="relationship" relationship="viewControllers" id="YiG-kd-Lrf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytn-ZF-n7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2743" y="199"/>
+        </scene>
+        <!--Courses list-->
+        <scene sceneID="jj4-8z-WIq">
+            <objects>
+                <tableViewController title="Courses list" id="BL5-Ph-uvm" customClass="CoursesTVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Bn4-Xw-2KJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hAu-Kb-edy">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hAu-Kb-edy" id="gJz-po-JI4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BL5-Ph-uvm" id="OAZ-mb-iix"/>
+                            <outlet property="delegate" destination="BL5-Ph-uvm" id="yDS-hA-lEZ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Courses" image="courses_training.png" badgeValue="8" id="J75-jA-6WH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAU-8F-07I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2685" y="1057"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Teacher-female-24.png" width="32" height="32"/>
+        <image name="courses_training.png" width="32" height="32"/>
+        <image name="group_forum.png" width="40" height="40"/>
+    </resources>
+</document>
