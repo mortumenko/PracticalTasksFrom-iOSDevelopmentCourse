@@ -26,6 +26,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Users" image="group_forum.png" badgeValue="7" id="8Xd-xV-gbR"/>
+                    <navigationItem key="navigationItem" title="[Users list]" id="RHS-bM-Zax"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIq-zQ-G4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,11 +75,22 @@
             </objects>
             <point key="canvasLocation" x="-3497" y="199"/>
         </scene>
-        <!--Tables content-->
+        <!--Tab-Controller-->
         <scene sceneID="1Jo-3h-DEI">
             <objects>
-                <tabBarController id="9rw-9J-uhB" customClass="TabBarVC" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Tables content" id="dL1-qa-JRD"/>
+                <tabBarController title="Tab-Controller" id="9rw-9J-uhB" customClass="TabBarVC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Tables content" id="dL1-qa-JRD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="MuA-2H-G6N">
+                            <connections>
+                                <action selector="editFromStoryboard:" destination="9rw-9J-uhB" id="E0e-PR-Web"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3bF-Xr-8Nr">
+                            <connections>
+                                <action selector="insertFromStoryboard:" destination="9rw-9J-uhB" id="SDu-2N-tYb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Y3I-Af-YmG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>

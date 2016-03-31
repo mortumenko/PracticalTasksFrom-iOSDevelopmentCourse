@@ -27,14 +27,18 @@
     
     self.navigationItem.title = @"All teachers";
     self.navigationItem.rightBarButtonItem.enabled = NO;
+    
 //Set tabBarItem for TabBarController programatically
     /*
     UIImage* teachersImage = [UIImage imageNamed:@"Teacher-female-24.png"];
     UITabBarItem* teachersTBI = [[UITabBarItem alloc] initWithTitle:@"Teachers" image:teachersImage tag:2];
     [self setTabBarItem:teachersTBI];
-     */
+    */
 }
-
+- (void) viewDidAppear:(BOOL)animated {
+    [self.tableView reloadData];
+    NSLog(@"TeachersTVC viewDidAppear");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

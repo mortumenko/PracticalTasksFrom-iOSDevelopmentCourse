@@ -23,13 +23,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //[[ManagerForCoreData sharedManager] generateAndOtherActions];
+    [[ManagerForCoreData sharedManager] generateAndOtherActions];
     
     //    UsersTCV* vc = [[UsersTCV alloc] initWithStyle:UITableViewStyleGrouped];
 //        CoursesTVC* vc = [[CoursesTVC alloc] initWithStyle:UITableViewStyleGrouped];
     //    TeachersTVC* vc = [[TeachersTVC alloc] initWithStyle:UITableViewStyleGrouped];
-//    TabBarVC* vc = [[TabBarVC alloc] init];
-/*
+    /*
+    TabBarVC* vc = [[TabBarVC alloc] init];
+
     UINavigationController* navContr = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navContr;
     */

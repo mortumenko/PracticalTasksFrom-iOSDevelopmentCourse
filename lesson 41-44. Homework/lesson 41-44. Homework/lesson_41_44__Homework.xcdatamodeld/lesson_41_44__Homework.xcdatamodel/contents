@@ -10,6 +10,7 @@
     <entity name="Users" representedClassName="UsersMO" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="motherLand" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="courseEnroled" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Courses" inverseName="studentOfCourse" inverseEntity="Courses" syncable="YES"/>
@@ -17,6 +18,6 @@
     </entity>
     <elements>
         <element name="Courses" positionX="-54" positionY="18" width="128" height="120"/>
-        <element name="Users" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="Users" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>
 </model>

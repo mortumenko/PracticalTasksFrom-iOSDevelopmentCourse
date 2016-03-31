@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TabBarVC : UITabBarController
+- (IBAction)insertFromStoryboard:(id)sender;
+- (IBAction)editFromStoryboard:(UIBarButtonItem *)sender;
 
 @end

@@ -40,13 +40,16 @@ static int itemsCount = 11;
 
 - (void) generateAndOtherActions {
 //    [self generateNumberOfUsers:10];
-    [self printAllUsersSortedByKey:@"firstName"];
+//    [self printAllUsersSortedByKey:@"firstName"];
+//    [self addCourseNamed:@"iOS"];
+
+//    [self saveContext];
+
     //manipulation via code
 /*
     NSArray* courseArray = [self getObjectsForEntity:@"Courses"];
     CoursesMO* firstCourse = [courseArray objectAtIndex:1];
     CoursesMO* secondCourse = [courseArray objectAtIndex:2];
-    //[firstCourse setValue:@"Heating and ventilation" forKey:@"nameOfCourse"];
     NSArray* studentsArray = [self getObjectsForEntity:@"Users"];
     NSInteger count  = [studentsArray count];
     UsersMO* lastStudent = [studentsArray lastObject];
@@ -63,9 +66,10 @@ static int itemsCount = 11;
         }
     }
     [self saveContext];
-
 */
-    
+//    NSArray* courseArray = [self getObjectsForEntity:@"Courses"];
+//    CoursesMO* firstCourse = [courseArray objectAtIndex:1];
+//    NSLog(@"%@ ID: %@", firstCourse.nameOfCourse, [firstCourse objectID]);
 }
 
 
