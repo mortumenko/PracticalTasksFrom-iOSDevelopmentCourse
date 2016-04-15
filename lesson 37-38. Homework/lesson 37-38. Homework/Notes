@@ -1,0 +1,11 @@
+How to draw something via overlays (<MKOverlay>), renderers and so on: see 1-3 steps in method (-drawCirclesForMeatingPointWithCoordinate:)
+
+life-circle of [direction calculateDirectionsWithCompletionHandler:<#^(MKDirectionsResponse *response, NSError *error)completionHandler#>];
+
+1 - asking for calculation
+2 - all row that located after this method
+3 - returned results of asking for EVERY request.
+3.1 - first we parse and use components of MKDirectionsResponse.
+3.2 - when we call [mapView addOverlays] delegate "rendererForOverlay" is invoked first for EVERY id <MKOverlay> of current request-response
+3.3 - we go back to the continiue of block (after [mapView addOverlays])
+
